@@ -16,9 +16,16 @@ function adicionar()
         list_prazo: prazo
     }
 
-    alert('Encomenda registrada!');
+    if(nome_cli == '' || produto == '' || valor == '' || prazo == '')
+    {
+        alert("Preencha todos os campos!")
+        return
+    }
+    else {
+    alert("Encomenda cadastrada!")
     lista_encomenda.push(encomenda)
     exibir();
+    }
 }
 
 function exibir()
