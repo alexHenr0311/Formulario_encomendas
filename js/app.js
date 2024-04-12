@@ -16,6 +16,7 @@ function adicionar()
         list_prazo: prazo
     }
 
+    alert('Encomenda registrada!');
     lista_encomenda.push(encomenda)
     exibir();
 }
@@ -35,7 +36,6 @@ function exibir()
         <td scope="row">${lista_encomenda[i].list_prazo}</td>
         </tr>
         `
-        alert('Encomenda registrada!');
     }
 }
 btn.addEventListener('click', adicionar)
